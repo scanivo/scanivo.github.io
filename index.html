@@ -3,106 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Scanivo - QR Menu Service</title>
+  <title>Scanivo - Smart QR Menus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0; background: #f4f6f8; color: #222;
-      display: flex; flex-direction: column; align-items: center;
-      min-height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fdf6f9;
+      color: #333;
     }
     header {
-      background: #3f51b5;
+      background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
       color: white;
-      width: 100%;
-      padding: 1.5rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
-    main {
-      flex: 1;
-      width: 100%;
-      max-width: 600px;
-      padding: 2rem 1rem;
-      box-sizing: border-box;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
-    h1 {
-      margin-top: 0;
-      font-weight: 700;
-    }
-    p {
+    header p {
       font-size: 1.1rem;
-      line-height: 1.5;
     }
-    .btn-group {
-      margin-top: 2rem;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
     }
-    a.button {
-      background: #3f51b5;
-      color: white;
-      text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
+    h2 {
+      text-align: center;
+      color: #c94f7c;
       font-weight: 600;
-      transition: background-color 0.3s ease;
     }
-    a.button:hover {
-      background: #303f9f;
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .feature-card {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+    .feature-card img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+    .preview img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+    }
+    .contact {
+      text-align: center;
+      background: #fceff8;
+      border-radius: 20px;
+      padding: 2rem;
+      margin-top: 3rem;
     }
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #555;
-      padding: 1rem 0;
-      width: 100%;
-      border-top: 1px solid #ddd;
+      padding: 1rem;
+      color: #777;
     }
-    @media (max-width: 480px) {
-      main {
-        padding: 1rem;
-      }
-      .btn-group {
-        flex-direction: column;
-      }
-      a.button {
-        width: 100%;
-        text-align: center;
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to Scanivo</h1>
-    <p>Your smart QR menu for your restaurent</p>
+    <h1>Scanivo</h1>
+    <p>Professional QR menus & smart payment solutions</p>
   </header>
-  <main>
-    <p>
-      Scanivo helps restaurants and businesses create beautiful, digital QR menus with
-      easy online payments. No printing, no hassle — just scan and enjoy.
-    </p>
-    <div class="btn-group">
-      <a href="#preview" class="button">Preview Menu</a>
-      <a href="#contact" class="button">Contact Us</a>
+
+  <section>
+    <h2>Why Choose Scanivo?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <img src="https://img.icons8.com/pastel-glyph/64/menu--v2.png" alt="Menu">
+        <h3>Digital Menus</h3>
+        <p>Elegant, customizable menus accessible by scanning a simple QR code.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/pastel-glyph/64/money.png" alt="Payment">
+        <h3>Secure Payments</h3>
+        <p>Seamless payment experience integrated with UPI and card services.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/pastel-glyph/64/mobile.png" alt="Responsive">
+        <h3>Fully Responsive</h3>
+        <p>Menus and systems work across all screen sizes and devices smoothly.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/pastel-glyph/64/presentation.png" alt="Professional">
+        <h3>Professional Design</h3>
+        <p>Designed to match your brand identity with clarity and elegance.</p>
+      </div>
     </div>
+  </section>
 
-    <section id="preview" style="margin-top: 3rem;">
-      <h2>Preview Menu</h2>
-      <p>Coming soon! Get a sneak peek of our stylish digital menus.</p>
-    </section>
+  <section class="preview">
+    <h2>Preview Sample</h2>
+    <p style="text-align:center;">This is a preview of how your QR menu might look.</p>
+    <img src="https://cdn.pixabay.com/photo/2017/01/22/19/20/menu-2009590_1280.jpg" alt="Sample Menu Preview">
+  </section>
 
-    <section id="contact" style="margin-top: 3rem;">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@scanivo.com">info@scanivo.com</a></p>
-      <p>Phone: +91 12345 67890</p>
-    </section>
-  </main>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:scanivohelp@gmail.com">scanivohelp@gmail.com</a></p>
+    <p>Phone: +91 74111 87308</p>
+  </section>
+
   <footer>
-    &copy; 2025 Scanivo. All rights reserved.
+    © 2025 Scanivo. All rights reserved.
   </footer>
+
 </body>
 </html>
